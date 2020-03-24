@@ -63,7 +63,7 @@ const Skills = () => {
                     </ul>
             </div>
             <div ClassName="other-skills">
-                <h2>Business Office Manager</h2>
+                <h2> Office Manager</h2>
                         <h3>Office/Business Duties:</h3>
                         <ul>
                             <li> Correspondence</li>
