@@ -8,10 +8,16 @@ const Skills = () => {
                     <h3>Languages:</h3>
                         <ul>
                             <li> React</li>
+                            React Hooks
+                            Redux
                             <li> Javascript</li>
-                            <li> Node</li>
+                            Asynchronous JavaScript
+                            <li> Node js</li>
+                            Express JS
+                            SQL
                             <li> CSS</li>
                             <li> Less</li>
+                            Sass
                             <li> HTML</li>
                         </ul>
                     <h3>Tools:</h3>
@@ -36,7 +42,6 @@ const Skills = () => {
                         <ul>
                             <li>Bootstrap</li>
                             <li>Styled Components</li>
-                            <li>Sass</li>
                         </ul>
             </div>
             <div className="tech-skills">
@@ -85,4 +90,4 @@ const Skills = () => {
         </div>
     )
 }
-export default Skills
+export default Skills;
