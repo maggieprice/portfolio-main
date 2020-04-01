@@ -50,7 +50,7 @@ class ContactForm extends Component{
                     </div>
                     <div className="form-group">
                         <label for="message">Message</label>
-                        <textarea className="form-control" rows="5" id="message"></textarea>
+                        <input className="form-control" rows="5" id="message"></input>
                     </div>
                     <button type="submit" className="btn btn-primary">Submit</button>
                 </form>
