@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import axios from 'axios';
+// import React, {Component} from 'react';
+// import axios from 'axios';
 
 
 // class ContactForm extends Component{
@@ -114,7 +114,7 @@ export default function ContactForm() {
   return (
 
     <div>
-     sent===false && <form className={form}  onSubmit={onSubmit}>
+     sent===false && <form className={'form'}  onSubmit={onSubmit}>
             <div>
                 <input
                 required
@@ -140,7 +140,7 @@ export default function ContactForm() {
                 value={email.message}
                 onChange={handleChange}
                 />
-                <Button type="submit" className={classes.button} onClick={()=>{setButtonText('loading...')}}>Submit</Button>
+                <button type="submit" className={'button'} onClick={()=>{setButtonText('loading...')}}>Submit</button>
             </div>
         </form>
      }
@@ -155,4 +155,3 @@ export default function ContactForm() {
 
 
 
-export default ContactForm; 
