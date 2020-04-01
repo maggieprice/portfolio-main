@@ -182,8 +182,15 @@ class ContactForm extends Component{
         // const handleSubmit = e => {
                 e.preventDefault();
                 axios.post('https://portfoliomail.herokuapp.com/send', email)
-                  .then(res=>setSent(true))
-                  .catch(err=>console.log(err))
+                //   .then(res=>setSent(true))
+                //   .catch(err=>console.log(err))
+                .then((response)=>{
+                        if (response.data.msg === 'success'){
+                            alert("Message Sent."); 
+                            this.resetForm()
+                        }else if(response.data.msg === 'fail'){
+                            alert("Message failed to send.")
+                        }
               }
     
 
