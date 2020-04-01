@@ -153,33 +153,39 @@ import React, {Component} from 'react';
 //   );
 // }
 
-// import React from 'react';
+//
 import axios from 'axios';
 
 class ContactForm extends Component{
   
     handleSubmit(e){
-        e.preventDefault();
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
-        axios({
-            method: "POST", 
-            url:"https://portfoliomail.herokuapp.com/send", 
-            data: {
-                name: name,   
-                email: email,  
-                messsage: message
-            }
-        }).then((response)=>{
-            if (response.data.msg === 'success'){
-                alert("Message Sent."); 
-                this.resetForm()
-            }else if(response.data.msg === 'fail'){
-                alert("Message failed to send.")
-            }
-        })
-    }
+        // e.preventDefault();
+        // const name = document.getElementById('name').value;
+        // const email = document.getElementById('email').value;
+        // const message = document.getElementById('message').value;
+        // axios({
+        //     method: "POST", 
+        //     url:"https://portfoliomail.herokuapp.com/send", 
+        //     data: {
+        //         name: name,   
+        //         email: email,  
+        //         messsage: message
+        //     }
+        // }).then((response)=>{
+        //     if (response.data.msg === 'success'){
+        //         alert("Message Sent."); 
+        //         this.resetForm()
+        //     }else if(response.data.msg === 'fail'){
+        //         alert("Message failed to send.")
+        //     }
+        // })
+        // const handleSubmit = e => {
+                e.preventDefault();
+                axios.post('https://portfoliomail.herokuapp.com/send', email)
+                  .then(res=>setSent(true))
+                  .catch(err=>console.log(err))
+              }
+    
 
     resetForm(){
         document.getElementById('contact-form').reset();
