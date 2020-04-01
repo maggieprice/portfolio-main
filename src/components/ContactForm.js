@@ -23,7 +23,7 @@ class ContactForm extends Component{
             }else if(response.data.msg === 'fail'){
                 alert("Message failed to send.")
             }
-        })
+        }) .catch(err=>console.log(err))
     }
 
     resetForm(){
