@@ -8,18 +8,15 @@ class ContactForm extends Component{
         const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
         const message = document.getElementById('message').value;
-        $.ajax({
-            url: 'https://portfoliomail.herokuapp.com/',
-            type: 'POST',
-            headers: {'Accept': 'application/json;'},
+        axios({
+            method: "POST", 
+            url:"https://portfoliomail.herokuapp.com/send", 
             data: {
-            "name": "name",
-            "email": "email address",
-            "message": "some body text"
-            },
-            }).done(function (res) {
-              console.log(res); // it shows your email sent message.
-            }).then((response)=>{
+                name: name,   
+                email: email,  
+                messsage: message
+            }
+        }).then((response)=>{
             if (response.data.msg === 'success'){
                 alert("Message Sent."); 
                 this.resetForm()
