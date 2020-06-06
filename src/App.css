@@ -12,18 +12,17 @@
   font-size: calc(10px + 2vmin);
   color: white;
   position: relative;
-  z-index:1;
+  z-index: 1;
 }
 
-Link{
+Link {
   padding: 3%;
-  margin:2%;
+  margin: 2%;
   background-color: lightgray;
   border: 2px solid black;
   color: black;
   width: 15rem;
   height: 50rem;
-
 }
 
 /* .top-content{
@@ -31,28 +30,27 @@ margin-top:-70%;
 } */
 
 .about {
-  margin-top: 5%;
+  margin: 5%;
 }
 
-h1{
+h1 {
   font-size: 13rem;
 }
 
-h3{
+h3 {
   font-size: 4rem;
 }
 
 .name {
-  background-color:hsla(9, 100%, 64%, 0.7);
-  width:100%;
-  height:35rem;
+  background-color: hsla(9, 100%, 64%, 0.7);
+  width: 100%;
+  height: 35rem;
   z-index: 0;
-  position:relative;
-  margin-top:35%;
+  position: relative;
+  /* margin-top: 35%; */
 }
 
-.header-img{
+/* .header-img{
   margin-top:-55%;
 
-}
-
+} */
