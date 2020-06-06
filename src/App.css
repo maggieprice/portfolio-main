@@ -68,3 +68,14 @@ h3 {
   width: 50rem;
   height: 35rem;
 }
+.python-skills {
+  background-color: darkgray;
+  color: white;
+  border: 1px solid black;
+  z-index: 1;
+  position: relative;
+  margin-top: -10%;
+  margin-left: 50%;
+  margin-right: 5%;
+  padding: 2%;
+}
