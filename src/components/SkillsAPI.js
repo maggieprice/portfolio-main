@@ -1,4 +1,4 @@
-SkillsAPI = [
+let SkillsAPI = [
   (Tech = [
     (Languages = [
       (React1 = [(Hooks = { level: "three" }), (Redux = { level: "three" })]),

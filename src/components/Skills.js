@@ -1,10 +1,12 @@
 import React from "react";
 import SkillsAPI from "./SkillsAPI";
 
-const Skills = () => {
+const Skills = (props) => {
   return (
     <div className="skills-container">
-      <div className="tech-skills"></div>
+      <div className="tech-skills">
+        <h3>Javascript: {props.AsynchronousJavascript.level}</h3>
+      </div>
       <div className="design-skills">
         <h3>Honorable Mention to things I enjoy creating as a designer:</h3>
         <ul>
