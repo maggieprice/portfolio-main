@@ -5,7 +5,7 @@ import React from "react";
 const Projects = () => {
   return (
     <div>
-      <h1>Projects Portfoio</h1>
+      <h1>Projects Portfolio</h1>
       <div className="Web Projects">
         <h2>Web Projects</h2>
         <div className="ui-projects">
