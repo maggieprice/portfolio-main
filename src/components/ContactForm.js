@@ -7,24 +7,37 @@ class ContactForm extends Component {
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const message = document.getElementById("message").value;
-    axios({
-      method: "POST",
-      url: "http://localhost:4000/send",
+    // axios({
+    //   method: "POST",
+    //   url: "http://localhost:4000/send",
+    //   data: {
+    //     name: name,
+    //     email: email,
+    //     messsage: message,
+    //   },
+    // })
+    //   .then((response) => {
+    //     if (response.data.msg === "success") {
+    //       alert("Message Sent.");
+    //       this.resetForm();
+    //     } else if (response.data.msg === "fail") {
+    //       alert("Message failed to send.");
+    //     }
+    //   })
+    ajax({
+      url: 'https://git.heroku.com/portfoliomail.git',
+      type: 'POST',
+      headers: {'Accept': 'application/json;'},
       data: {
-        name: name,
-        email: email,
-        messsage: message,
+      "name": "name",
+      "subject": "subject",
+      "email": "message",
+      "message": "some body text"
       },
-    })
-      .then((response) => {
-        if (response.data.msg === "success") {
-          alert("Message Sent.");
-          this.resetForm();
-        } else if (response.data.msg === "fail") {
-          alert("Message failed to send.");
-        }
-      })
-      .catch((err) => console.log(err));
+      }).done(function (res) {
+        console.log(res); // it shows your email sent message.
+      }); 
+      // .catch((err) => console.log(err));
   }
 
   resetForm() {
