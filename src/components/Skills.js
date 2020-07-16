@@ -5,7 +5,7 @@ const Skills = (props) => {
   return (
     <div className="skills-container">
       <div className="tech-skills">
-        <h3>Javascript: {props.AsynchronousJavascript.level}</h3>
+        <h3>Javascript: </h3>
       </div>
       <div className="design-skills">
         <h3>Honorable Mention to things I enjoy creating as a designer:</h3>

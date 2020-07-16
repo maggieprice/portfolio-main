@@ -1,44 +1,49 @@
 import React, { Component } from "react";
 import axios from "axios";
+// import ajax from "ajax";
 
 class ContactForm extends Component {
   handleSubmit(e) {
     e.preventDefault();
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
+    const subject = document.getElementById("subject").value;
     const message = document.getElementById("message").value;
-    // axios({
-    //   method: "POST",
-    //   url: "http://localhost:4000/send",
-    //   data: {
-    //     name: name,
-    //     email: email,
-    //     messsage: message,
-    //   },
-    // })
-    //   .then((response) => {
-    //     if (response.data.msg === "success") {
-    //       alert("Message Sent.");
-    //       this.resetForm();
-    //     } else if (response.data.msg === "fail") {
-    //       alert("Message failed to send.");
-    //     }
-    //   })
-    ajax({
-      url: 'https://git.heroku.com/portfoliomail.git',
-      type: 'POST',
-      headers: {'Accept': 'application/json;'},
+    axios({
+      method: "POST",
+      url: "https://git.heroku.com/portfoliomail.git",
       data: {
-      "name": "name",
-      "subject": "subject",
-      "email": "message",
-      "message": "some body text"
+        name: name,
+        email: email,
+        subject: subject,
+        messsage: message,
       },
-      }).done(function (res) {
-        console.log(res); // it shows your email sent message.
-      }); 
-      // .catch((err) => console.log(err));
-  }
+    })
+      .then((response) => {
+        if (response.data.msg === "success") {
+          alert("Message Sent.");
+          this.resetForm();
+        } else if (response.data.msg === "fail") {
+          alert("Message failed to send.");
+        }
+      })
+  //   <script src="jquery.js">
+  //   $.ajax({
+  //     url: 'https://git.heroku.com/portfoliomail.git',
+  //     type: 'POST',
+  //     headers: {'Accept': 'application/json;'},
+  //     data: {
+  //     "name": "name",
+  //     "subject": "subject",
+  //     "email": "message",
+  //     "message": "some body text"
+  //     },
+  //     }).done(function (res) {
+  //       console.log(res); // it shows your email sent message.
+  //     }); 
+  //     // .catch((err) => console.log(err));
+  //     </script>
+  } 
 
   resetForm() {
     document.getElementById("contact-form").reset();
@@ -74,10 +79,19 @@ class ContactForm extends Component {
               />
             </div>
             <div className="form-group">
+              <label htmlFor="subject">Subject</label>
+              <input
+                type="text"
+                className="form-control"
+                id="subject"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div className="form-group">
               <label htmlFor="message">Message</label>
               <input className="form-control" rows="5" id="message"></input>
             </div>
-            <button type="submit" className="btn btn-primary">
+            <button onSubmit={this.handleSubmit} className="btn btn-primary">
               Submit
             </button>
           </form>
