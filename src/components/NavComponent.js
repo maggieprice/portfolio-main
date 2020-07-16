@@ -1,6 +1,6 @@
 import React from 'react';
 import { Nav, NavItem, NavLink } from "shards-react";
-import { BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Home from './Home';
 import Skills from './Skills';
 import Projects from './Projects';
@@ -10,7 +10,7 @@ import ContactForm from './ContactForm';
 export default function NavComponent() {
   return (
     <Router>
-    <Nav tabs>
+    <Nav className="navigation" tabs>
       <NavItem>
         <NavLink active href="/" >
           Home
