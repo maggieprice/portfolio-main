@@ -1,6 +1,6 @@
 export const SkillsAPI = [
   { category: 'Tech',
-   Languages = [
+   Languages: [
     {name: 'Javascript', image:'xyz', level: "three"},
 {name: 'HTML', image:'xyz', level: "three"},
 {name: 'CSS', image:'xyz', level: "three"}
