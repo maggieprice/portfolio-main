@@ -4,9 +4,9 @@ function Home() {
   return (
     <div className="page">
       <div className="top">
-        <div className="name">
+        <div>
           <h3>Looking to hire a web developer? Meet me.</h3>
-          <h1>
+          <h1 className="name">
             {"<"} Maggie J. Price {"/ >"}
           </h1>
           <h3>Full Stack Web Developer/Software Engineer</h3>
