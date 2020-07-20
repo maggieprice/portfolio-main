@@ -102,3 +102,21 @@ h3 {
 a:hover {
   color: #fc5e6c;
 }
+
+.btn-primary{
+  background-color: white;
+  color: #fc5e6c;
+  background-color: #fc5e6c ;
+}
+
+.btn{
+ background-color: white;
+ color: #fc5e6c;
+}
+
+.btn-primary:hover{
+  background-color: #fc5e6c ;
+}
+.btn:hover{
+ background-color: #fc5e6c;
+}
