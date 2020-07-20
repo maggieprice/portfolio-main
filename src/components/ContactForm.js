@@ -52,11 +52,17 @@ class ContactForm extends Component {
   render() {
     return (
       <div className="page">
+        
         <div className="contact-head">
           <h1>We Should Hang Out...</h1>
         </div>
-        <div className="social-media-links">
-          {/* LinkedIn, Twitter, Github,  */}
+        <div className="contact-logos">
+          <a href="https://github.com/maggieprice">
+            <img src="src\data\GitHub-Mark-120px-plus.png" alt="Github Logo that Links to My Profile"/>
+          </a>
+          <a href="https://www.linkedin.com/in/maggieprice1/">
+            <img src="smiley.gif" alt="LinkedIn Logo that Links to My Profile"/>
+          </a>
         </div>
 
         <div className="col-sm-4 offset-sm-4">
