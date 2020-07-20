@@ -3,7 +3,7 @@ import SkillsAPI from "./SkillsAPI";
 
 const Skills = (props) => {
   return (
-    <div className="skills-container">
+    <div className="page">
       <div className="tech-skills">
         <h3>Javascript: </h3>
       </div>

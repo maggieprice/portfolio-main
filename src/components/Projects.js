@@ -4,7 +4,7 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <div>
+    <div className="page">
       <h1>Projects Portfolio</h1>
       <div className="Web Projects">
         <h2>Web Projects</h2>

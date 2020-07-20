@@ -1,36 +1,8 @@
 .App {
   text-align: center;
+  padding: 1%;
   background-color: black;
-  color: #1dcadb;
 }
-
-.App-header {
-  background-color: hsla(9, 100%, 64%, 0.5);
-  min-height: 15rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  position: relative;
-  z-index: 1;
-}
-
-Link {
-  padding: 3%;
-  margin: 2%;
-  background-color: lightgray;
-  border: 2px solid black;
-  color: black;
-  width: 15rem;
-  height: 50rem;
-}
-
-/* .top-content{
-margin-top:-70%;
-} */
-
 .about {
   margin: 5%;
 }
@@ -52,10 +24,6 @@ h3 {
 
 } */
 
-/* .header-img{
-  margin-top:-55%;
-
-} */
 
 .tech-skills {
   background-color: darkgray;
@@ -85,23 +53,23 @@ h3 {
 /* navigation tabs */
 .navigation1{
   width: 25%;
+  color: #fc5e6c;
+  /* padding-left: 1%;
+  padding-right: 1%; */
 }
-.navigation{
+.navigation {
   background-color: black;
   color: #1dcadb;
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
   overflow: hidden;
+  margin-top: 3%;
   width: 100%;
 }
 
-/* .hvr-underline-from-center {
-  
-} */
 
 .navigation:before {
   content: "";
@@ -110,7 +78,7 @@ h3 {
   left: 51%;
   right: 51%;
   bottom: 0;
-  background: #2098D1;
+  background: #1dcadb;
   height: 4px;
   -webkit-transition-property: left, right;
   transition-property: left, right;
@@ -118,8 +86,19 @@ h3 {
   transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
+ 
 }
 .navigation:hover:before, .navigation:focus:before, .navigation:active:before {
   left: 0;
   right: 0;
+}
+
+.page{
+  background-color: black;
+  color: #1dcadb;
+  padding: 1%;
+}
+
+a:hover {
+  color: #fc5e6c;
 }

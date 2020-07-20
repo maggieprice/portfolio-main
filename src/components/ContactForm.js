@@ -51,7 +51,7 @@ class ContactForm extends Component {
 
   render() {
     return (
-      <div>
+      <div className="page">
         <div className="contact-head">
           <h1>We Should Hang Out...</h1>
         </div>
