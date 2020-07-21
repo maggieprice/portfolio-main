@@ -6,6 +6,11 @@ function Home() {
     <div className="page">
       <div className="top">
         <div>
+        <img
+          className="header-img"
+          src="https://images.unsplash.com/photo-1503891450247-ee5f8ec46dc3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
+          alt="miami"
+        />
           <h3 className="coral">Looking to hire a web developer? Meet me.</h3>
           {/* <h1 className="name">{"<"} Maggie J. Price {"/>"}</h1> */}
           <div class="wrapper">
@@ -18,11 +23,7 @@ function Home() {
     </div> 
           <h3 className="coral">Full Stack Web Developer/Software Engineer</h3>
         </div>
-        {/* <img
-          className="header-img"
-          src="https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2704&q=80"
-          alt="laptop on table"
-        /> */}
+        
       </div>
       <div className="about">
         {/* <img > */}
@@ -40,11 +41,12 @@ function Home() {
           <div className="hobbies">
             <h3>What do I Love?</h3>
             <ul className="content-right">
+              <p>Traveling</p>
               <p>Decorating</p>
               <p>Singing</p>
               <p>Playing Piano</p>
               <p>
-                listening to Learn (Podcasts/Youtube)
+                Listening to Learn (Podcasts/Youtube)
               </p>
               <p>Streaming TV</p>
               <p>Listening to Music</p>

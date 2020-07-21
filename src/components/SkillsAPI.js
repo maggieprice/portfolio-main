@@ -1,83 +1,100 @@
 export const SkillsAPI = [
-  { category: 'Tech',
-   Languages: [
-    {name: 'Javascript', image:'xyz', level: "three"},
-{name: 'HTML', image:'xyz', level: "three"},
-{name: 'CSS', image:'xyz', level: "three"}
-//  Hooks : { level: "three" }, Redux : { level: "three" }},
-//    Javascript : {
-//        AsynchronousJavaScript : { level: "three" },
-//        AlgorithmsJ : { level: "three" },
-//      },
-//      HTMLx : { level: "three" },
-//    Nodejs : {
-//        Expressjs : { level: "three" },
-//        SQLx : { level: "three" },
-//      },
-//      CSS : { level: "three" },
-//      Less : { level: "three" },
-//      Sass : { level: "three" },
-//    Python : {
-//        BigO : { level: "three" },
-//        DataStr : { level: "three" },
-//        AlgorithmsP : { level: "three" },
-//      },
-   ]}
+  { 
+      category: 'Tech',
+      type: 'Language',
+      list: [
+        {name: 'Javascript', image:'xyz', level: "three"},
+        {name: 'HTML', image:'xyz', level: "three"},
+        {name: 'CSS', image:'xyz', level: "three"}
+    ],
+},
+{ 
+    category: 'Tech',
+    type: 'Frameworks',
+    list: [
+      {name: 'React', image:'xyz', level: "three"},
+      {name: 'Redux', image:'xyz', level: "three"},
+      {name: 'Hooks/Context API', image:'xyz', level: "three"}
+  ],
+},
+{ 
+    category: 'Tech',
+    type: 'Backend',
+    list: [
+      {name: 'NodeJS', image:'xyz', level: "three"},
+      {name: 'Express', image:'xyz', level: "three"},
+      {name: 'SQL', image:'xyz', level: "three"}
+  ],
+},
+{ 
+    category: 'Tech',
+    type: 'styling',
+    list: [
+      {name: 'CSS', image:'xyz', level: "three"},
+      {name: 'Less', image:'xyz', level: "three"},
+      {name: 'Sass', image:'xyz', level: "three"},
+      {name: 'Styled Components', image:'xyz', level: "three"},
+      {name: 'Material UI', image:'xyz', level: "three"},
+      {name: 'Sass', image:'xyz', level: "three"}
+  ],
+},
+{ 
+    category: 'Tech',
+    type: 'cs',
+    list: [
+      {name: 'Python', image:'xyz', level: "three"},
+      {name: 'BigO', image:'xyz', level: "three"},
+      {name: 'Data Structures', image:'xyz', level: "three"},
+      {name: 'Algorithims', image:'xyz', level: "three"}
+  ],
+},
+{
+category: 'Tech',
+    type: 'deployment',
+    list: [
+      {name: 'netlify', image:'xyz', level: "three"},
+      {name: 'vercel', image:'xyz', level: "three"},
+      {name: 'heroku', image:'xyz', level: "three"}
+  ],
+},
+{
+    category: 'Tech',
+        type: 'tools',
+        list: [
+          {name: 'Github', image:'xyz', level: "three"},
+          {name: 'Git', image:'xyz', level: "three"},
+          {name: 'Postman', image:'xyz', level: "three"},
+          {name: 'Sqlite3', image:'xyz', level: "three"},
+          {name: 'Figma', image:'xyz', level: "three"},
+          {name: 'Trello', image:'xyz', level: "three"},
+          {name: 'Codepen', image:'xyz', level: "three"},
+          {name: 'CodeSandbox', image:'xyz', level: "three"},
+          {name: 'VSCode', image:'xyz', level: "three"},
+          {name: 'Terminal', image:'xyz', level: "three"}
+      ],
+    },
+    {
+        category: 'Office/Soft',
+            type: 'all',
+            list: [
+              {name: 'Banking', image:'xyz', level: "three"},
+              {name: 'Bookeeping', image:'xyz', level: "three"},
+              {name: 'Accounts Payable/Receivable', image:'xyz', level: "three"},
+              {name: 'Correspondence', image:'xyz', level: "three"},
+              {name: 'Dictation', image:'xyz', level: "three"},
+              {name: 'Scheduling', image:'xyz', level: "three"},
+              {name: 'Compliance', image:'xyz', level: "three"},
+              {name: 'ReccordsKeeping', image:'xyz', level: "three"},
+              {name: 'Office Equipment', image:'xyz', level: "three"},
+              {name: 'Microsoft Office', image:'xyz', level: "three"},
+              {name: 'Quicken/Quickbooks', image:'xyz', level: "three"}
+          ],
+        }
+
 //  Libraries : {
-//      Bootstrap : { level: "three" },
-//      StyledComponents : { level: "three" },
-//      ReactSuite : { level: "three" },
-//      MaterialUI : { level: "three" },
+//      Bootstrap : { level: "three" }, 
 //    },
-//  Tools : {
-//      Github : { level: "three" },
-//      Git : { level: "three" },
-//      Postman : { level: "three" },
-//      Sqlite3 : { level: "three" },
-//      Figma : { level: "three" },
-//      Trello : { level: "three" },
-//      Codepen : { level: "three" },
-//      CodeSandbox : { level: "three" },
-//      VSCode : { level: "three" },
-//      Terminal : { level: "three" },
-//    },
-//  Systems : {Mac : { level: "three" }, Windows : { level: "three" }},
-//   },
-// Office : {
-//  Finance : {
-//      Banking : { level: "three" },
-//      Bookeeping : { level: "three" },
-//      AccountsPR : { level: "three" },
-//    },
-//  Clerical : {
-//      Correspondence : { level: "three" },
-//      Dictation : { level: "three" },
-//      Scheduling : { level: "three" },
-//    },
-//  Legal : {
-//      Compliance : { level: "three" },
-//      Records : { level: "three" },
-//    },
-//  TSupport : {
-//      Computers : { level: "three" },
-//      Printers : { level: "three" },
-//      Misc : { level: "three" },
-//    },
-//  ToolsO : {
-//    Microsoft : {
-//        Word : { level: "three" },
-//        Ppt : { level: "three" },
-//        Excel : { level: "three" },
-//        Publisher : { level: "three" },
-//      },
-//    Quicken : {
-//        Bookeeping1 : { level: "three" },
-//        Budgets : { level: "three" },
-//        Reports : { level: "three" },
-//      },
-//    },
-//  },
-// ];
+
 
 // export default SkillsAPI;
 

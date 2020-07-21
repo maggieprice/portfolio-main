@@ -15,6 +15,14 @@ h3 {
   font-size: 4rem;
 }
 
+.header-img{
+  margin: 5%;
+  background-image: url('https://images.unsplash.com/photo-1503891450247-ee5f8ec46dc3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-attachment: fixed;
+}
 .name {
   color:  #fc5e6c;
 }
@@ -127,4 +135,7 @@ a:hover {
 }
 .btn:hover{
  background-color: #fc5e6c;
+}
+button{
+  border-radius: 1px solid #fc5e6c;
 }

@@ -1,7 +1,7 @@
 let ProjestAPI = [
   (HTMLProject = {
     Name: "1st Build Week",
-    Link: "secondchance.netlify.com",
+    Link: "https://second-chance-maggieprice.netlify.app",
     Youtube: "",
     Repo: "github.com/maggieprice/secondchance",
     Symbols: "xyz",
