@@ -1,15 +1,22 @@
 import React from "react";
+import '../name.css';
 
 function Home() {
   return (
     <div className="page">
       <div className="top">
         <div>
-          <h3>Looking to hire a web developer? Meet me.</h3>
-          <h1 className="name">
-            {"<"} Maggie J. Price {"/ >"}
-          </h1>
-          <h3>Full Stack Web Developer/Software Engineer</h3>
+          <h3 className="coral">Looking to hire a web developer? Meet me.</h3>
+          {/* <h1 className="name">{"<"} Maggie J. Price {"/>"}</h1> */}
+          <div class="wrapper">
+        <div class="neon-wrapper">
+            <span class="txt" >
+            {"<"} Maggie J. Price {"/>"}</span>
+            <span class="gradient"></span>
+            <span class="dodge"></span>
+        </div>
+    </div> 
+          <h3 className="coral">Full Stack Web Developer/Software Engineer</h3>
         </div>
         {/* <img
           className="header-img"
@@ -21,7 +28,7 @@ function Home() {
         {/* <img > */}
         <div className="about-paragraph">
           <h3>Who am I?</h3>
-          <p>
+          <p className="content-left">
             Hi. I am a creative. Realizing this allowed me to find my passion in
             web development. I love creating and problem solving. So, web
             development is very fulfilling for me. I am also pursuing a Bachelor
@@ -32,22 +39,21 @@ function Home() {
           </p>
           <div className="hobbies">
             <h3>What do I Love?</h3>
-            <ul>
-              <li>Decorating</li>
-              <li>Singing</li>
-              <li>Playing Piano</li>
-              <li>
-                Listening to Podcasts, Youtube Videos, and Certain Talk Shows to
-                Learn
-              </li>
-              <li>Streaming TV</li>
-              <li>Listening to Music</li>
-              <li>Helping Others</li>
-              <li>Crafting</li>
+            <ul className="content-right">
+              <p>Decorating</p>
+              <p>Singing</p>
+              <p>Playing Piano</p>
+              <p>
+                listening to Learn (Podcasts/Youtube)
+              </p>
+              <p>Streaming TV</p>
+              <p>Listening to Music</p>
+              <p>Helping Others</p>
+              <p>Crafting</p>
             </ul>
           </div>
-          <h3>What is my personal mission?</h3>
-          <p>
+          <h3>What is My Personal Mission?</h3>
+          <p className="content-left">
             My personal mission is to disrupt the current tech space with
             innovative technologies. I intend to learn and grow consistently to
             accomplish this. I am really facinated by the role that technology

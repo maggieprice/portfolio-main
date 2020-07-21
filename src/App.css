@@ -19,6 +19,16 @@ h3 {
   color:  #fc5e6c;
 }
 
+.content-left {
+  color:  #fc5e6c;
+  text-align: left;
+  width: 40%
+}
+.content-right {
+  color:  #fc5e6c;
+  text-align: right;
+  width: -40%;
+}
 
 .tech-skills {
   background-color: darkgray;
@@ -92,6 +102,9 @@ h3 {
   background-color: black;
   color: #1dcadb;
   padding: 1%;
+}
+.coral{
+  color: #fc5e6c
 }
 
 a:hover {
