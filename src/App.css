@@ -139,3 +139,7 @@ a:hover {
 button{
   border-radius: 1px solid #fc5e6c;
 }
+
+.card-title{
+  color: #fc5e6c
+}
