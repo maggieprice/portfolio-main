@@ -165,3 +165,8 @@ button{
   margin-right: auto;
   text-align: center;
 }
+
+.card-img{
+  width: 20%;
+  height: auto;
+}

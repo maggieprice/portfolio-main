@@ -17,18 +17,16 @@ const Skills = () => {
         <h3 className="skills-categories">Web Development Skills and Tech Stack </h3>
         <div className='skills-categories'>
  								{SkillsAPI.map(cat => {
-                   var techClass = document.getElementsByName("Tech");
-                   techClass.className += " tech"
+                  //  var techClass = document.getElementsByName("Tech");
+                  //  techClass.className += " tech"
                    return (
                    <div className="skills-card" key={cat.id}>
                      <Card className="card"> 
                        <CardHeader className="card-title">{cat.type}</CardHeader>
-                       <CardTitle>{cat.list.name}</CardTitle>
-                       <CardImg>{cat.list.image}</CardImg>
-                       <CardBody className="card-body">{cat.level}</CardBody>
+                       <CardTitle>{cat.list[1].name}</CardTitle>
+                       <CardImg className="card-img" src={cat.list[1].image}/>
+                       <CardBody className="card-body">{cat.list[1].level}</CardBody>
                        <CardFooter>{cat.category}</CardFooter></Card> </div>
-                       
-			
 								)})}
                 
               
