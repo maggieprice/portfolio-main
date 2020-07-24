@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+// import 
 // import ajax from "ajax";
 
 class ContactForm extends Component {
@@ -58,10 +59,10 @@ class ContactForm extends Component {
         </div>
         <div className="contact-logos">
           <a href="https://github.com/maggieprice">
-            <img src="src\data\GitHub-Mark-120px-plus.png" alt="Github Logo that Links to My Profile"/>
+            <img className="contact-logos" src="https://cdn1.iconfinder.com/data/icons/free-social-media-14/32/github_social_media_connect-256.png" alt="Github Logo that Links to My Profile"/>
           </a>
           <a href="https://www.linkedin.com/in/maggieprice1/">
-            <img src="smiley.gif" alt="LinkedIn Logo that Links to My Profile"/>
+            <img className="contact-logos" src="https://cdn1.iconfinder.com/data/icons/social-media-free-26/32/linkedin_social_media_connect-256.png" alt="LinkedIn Logo that Links to My Profile"/>
           </a>
         </div>
 
