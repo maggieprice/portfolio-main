@@ -38,7 +38,7 @@ h3 {
   width: -40%;
 }
 
-.tech-skills {
+/* .tech-skills {
   background-color: darkgray;
   color: white;
   border: 1px solid black;
@@ -50,8 +50,8 @@ h3 {
 
   width: 50rem;
   height: 35rem;
-}
-.python-skills {
+} */
+/* .python-skills {
   background-color: darkgray;
   color: white;
   border: 1px solid black;
@@ -61,7 +61,7 @@ h3 {
   margin-left: 50%;
   margin-right: 5%;
   padding: 2%;
-}
+} */
 
 /* navigation tabs */
 .navigation1{
@@ -110,6 +110,8 @@ h3 {
   background-color: black;
   color: #1dcadb;
   padding: 1%;
+  font-family: 'Permanent Marker', cursive;
+/* font-family: 'Sedgwick Ave Display', cursive; */
 }
 .coral{
   color: #fc5e6c
@@ -142,4 +144,14 @@ button{
 
 .card-title{
   color: #fc5e6c
+}
+.card{
+  width: 20%;
+  height: 15rem;
+  margin:2%;
+  border: 5px solid #fc5e6c;
+  color: #fc5e6c
+}
+.tech{
+  background-color: blue;
 }

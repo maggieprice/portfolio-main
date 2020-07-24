@@ -1,28 +1,37 @@
 import React from "react";
-import {SkillsAPI} from "./SkillsAPI";
+import {SkillsAPI} from './SkillsAPI';
 import {
   Card,
-  CardHeader,
   CardTitle,
   CardImg,
   CardBody,
+  CardHeader,
   CardFooter,
+  // CardFooter,
 } from "shards-react";
 
-const Skills = (props) => {
+const Skills = () => {
   return (
     <div className="page">
-      <div className="tech-skills">
-        <h3>Web Development SKills and Tech Stack </h3>
+      <div>
+        <h3 className="skills-categories">Web Development Skills and Tech Stack </h3>
         <div className='skills-categories'>
- 								{SkillsAPI.map(category => {
-                   return (<div className="skills-card" key={category.category}>
+ 								{SkillsAPI.map(cat => {
+                   var techClass = document.getElementsByName("Tech");
+                   techClass.className += " tech"
+                   return (
+                   <div className="skills-card" key={cat.id}>
                      <Card className="card"> 
-                       <CardTitle className="card-title">{category.type}</CardTitle>
-                       <CardImg>{category.list.image}</CardImg>
-                       <CardBody className="card-body">{category.list.level}</CardBody></Card> </div>
+                       <CardHeader className="card-title">{cat.type}</CardHeader>
+                       <CardTitle>{cat.list.name}</CardTitle>
+                       <CardImg>{cat.list.image}</CardImg>
+                       <CardBody className="card-body">{cat.level}</CardBody>
+                       <CardFooter>{cat.category}</CardFooter></Card> </div>
+                       
 			
 								)})}
+                
+              
 							</div>
       </div>
       <div className="design-skills">
@@ -44,17 +53,3 @@ const Skills = (props) => {
   );
 };
 export default Skills;
-
-// <div className='page-container'>
-// 			<div className='panel-centered'>
-// 				<section className='skills-page'>
-// 					<h2>Skills & Tech Stack</h2>
-// 					<div className='skills-content'>
-// 						<div className='skills-block'>
-// 							<h3>Front-End</h3>
-// 							<div className='skills-categories'>
-// 								{skillsFrontEnd.map((category, index) => (
-// 									<SkillCategory key={index} category={category} />
-// 								))}
-// 							</div>
-// 						</div>

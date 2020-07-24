@@ -1,15 +1,17 @@
 export const SkillsAPI = [
   { 
+      id: 1,
       category: 'Tech',
       type: 'Language',
       list: [
         {name: 'Javascript', image:'xyz', level: "three"},
         {name: 'HTML', image:'xyz', level: "three"},
-        {name: 'CSS', image:'xyz', level: "three"}
+        {name: 'CSS', image:'src\data\css3-original.svg', level: "three"}
     ],
 },
 { 
-    category: 'Tech',
+  id: 2,  
+  category: 'Tech',
     type: 'Frameworks',
     list: [
       {name: 'React', image:'xyz', level: "three"},
@@ -18,7 +20,8 @@ export const SkillsAPI = [
   ],
 },
 { 
-    category: 'Tech',
+  id: 3,  
+  category: 'Tech',
     type: 'Backend',
     list: [
       {name: 'NodeJS', image:'xyz', level: "three"},
@@ -30,7 +33,8 @@ export const SkillsAPI = [
   ],
 },
 { 
-    category: 'Tech',
+  id: 4,  
+  category: 'Tech',
     type: 'styling',
     list: [
       {name: 'CSS', image:'xyz', level: "three"},
@@ -42,7 +46,8 @@ export const SkillsAPI = [
   ],
 },
 { 
-    category: 'Tech',
+  id: 5,   
+  category: 'Tech',
     type: 'cs',
     list: [
       {name: 'Python', image:'xyz', level: "three"},
@@ -52,7 +57,8 @@ export const SkillsAPI = [
   ],
 },
 {
-category: 'Tech',
+  id: 6,
+    category: 'Tech',
     type: 'deployment',
     list: [
       {name: 'netlify', image:'xyz', level: "three"},
@@ -61,7 +67,8 @@ category: 'Tech',
   ],
 },
 {
-    category: 'Tech',
+        id: 7,
+        category: 'Tech',
         type: 'tools',
         list: [
           {name: 'Github', image:'xyz', level: "three"},
@@ -77,7 +84,8 @@ category: 'Tech',
       ],
     },
     {
-        category: 'Office/Soft',
+            id: 8,  
+            category: 'Office/Soft',
             type: 'all',
             list: [
               {name: 'Banking', image:'xyz', level: "three"},
