@@ -21,13 +21,16 @@ const Projects = () => {
             <Card className="card2">
               <CardTitle>{project.Name}</CardTitle>
               <CardImg className="project-card-img" src={project.Thumbnail}/>
+              <div className="project-icons">
               <a href={project.Link}>
-                <img className="contact-logos" src="
+                <img className="logos" src="
                 https://cdn0.iconfinder.com/data/icons/simpline-mix/64/simpline_47-256.png" alt="WWW Logo that Links to project"/>
               </a>
+              {/* <p> | </p> */}
               <a href={project.Repo}>
-                <img className="contact-logos" src="https://cdn1.iconfinder.com/data/icons/free-social-media-14/32/github_social_media_connect-256.png" alt="Github Logo that Links to my repo"/>
+                <img className="logos" src="https://cdn1.iconfinder.com/data/icons/free-social-media-14/32/github_social_media_connect-256.png" alt="Github Logo that Links to my repo"/>
               </a>
+              </div>
               <CardFooter>
                 <CardImg src={project.Symbols}/>
               </CardFooter>
