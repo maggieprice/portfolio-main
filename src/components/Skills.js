@@ -17,10 +17,10 @@ const Skills = () => {
   return (
     <div className="page">
       <div>
-        <h3 className="skills-categories">Web Development Skills and Tech Stack </h3>
-          <Alert><h4>Honorable Mention: Design</h4>
+        <h3 className="skills-categories">Web Development Skills, Tech Stack, and More...</h3>
+          <Alert className="alert"><h4>Honorable Mention: Design</h4>
             <p> PhotoShop | InDesign | Invitations | Flyers | Advertisements | Basic Logos</p> </Alert> 
-          <Alert> <h4>Honorable Mention: Office Skills</h4>
+          <Alert className="alert"> <h4>Honorable Mention: Office Skills</h4>
             <p> Banking/Bookkeeping | Correspondence, Dictation, Scheduling | Accounts Payable/Receiveable | Compliance, Records | Quicken/Quickbooks</p>
                  </Alert>
         <div className='skills-categories'>
@@ -28,7 +28,7 @@ const Skills = () => {
                    return (
                     <div className="skills-container">
                     <div className="skills-card" key={cat.id}>
-                    <Card className="card"> 
+                    <Card className="card1"> 
                       <CardHeader className="card-title">{cat.type}</CardHeader>
                       <CardTitle>{cat.list[0].name}</CardTitle>
                       <CardImg className="card-img" src={cat.list[0].image}/>
@@ -37,7 +37,7 @@ const Skills = () => {
                    </Card> 
                  </div>
                    <div className="skills-card" key={cat.id}>
-                     <Card className="card"> 
+                     <Card className="card1"> 
                        <CardHeader className="card-title">{cat.type}</CardHeader>
                        <CardTitle>{cat.list[1].name}</CardTitle>
                        <CardImg className="card-img" src={cat.list[1].image}/>
@@ -46,7 +46,7 @@ const Skills = () => {
                     </Card> 
                   </div>
                   <div className="skills-card" key={cat.id}>
-                     <Card className="card"> 
+                     <Card className="card1"> 
                        <CardHeader className="card-title">{cat.type}</CardHeader>
                        <CardTitle>{cat.list[2].name}</CardTitle>
                        <CardImg className="card-img" src={cat.list[2].image}/>
@@ -55,7 +55,7 @@ const Skills = () => {
                     </Card> 
                   </div>
                   <div className="skills-card" key={cat.id}>
-                     <Card className="card"> 
+                     <Card className="card1"> 
                        <CardHeader className="card-title">{cat.type}</CardHeader>
                        <CardTitle>{cat.list[3].name}</CardTitle>
                        <CardImg className="card-img" src={cat.list[3].image}/>
@@ -64,7 +64,7 @@ const Skills = () => {
                     </Card> 
                   </div>
                   <div className="skills-card" key={cat.id}>
-                     <Card className="card"> 
+                     <Card className="card1"> 
                        <CardHeader className="card-title">{cat.type}</CardHeader>
                        <CardTitle>{cat.list[4].name}</CardTitle>
                        <CardImg className="card-img" src={cat.list[4].image}/>
@@ -73,7 +73,7 @@ const Skills = () => {
                     </Card> 
                   </div>
                   <div className="skills-card" key={cat.id}>
-                     <Card className="card"> 
+                     <Card className="card1"> 
                        <CardHeader className="card-title">{cat.type}</CardHeader>
                        <CardTitle>{cat.list[5].name}</CardTitle>
                        <CardImg className="card-img" src={cat.list[5].image}/>
@@ -82,7 +82,7 @@ const Skills = () => {
                     </Card> 
                   </div>
                   <div className="skills-card" key={cat.id}>
-                     <Card className="card"> 
+                     <Card className="card1"> 
                        <CardHeader className="card-title">{cat.type}</CardHeader>
                        <CardTitle>{cat.list[6].name}</CardTitle>
                        <CardImg className="card-img" src={cat.list[6].image}/>
@@ -91,7 +91,7 @@ const Skills = () => {
                     </Card> 
                   </div>
                   <div className="skills-card" key={cat.id}>
-                     <Card className="card"> 
+                     <Card className="card1"> 
                        <CardHeader className="card-title">{cat.type}</CardHeader>
                        <CardTitle>{cat.list[7].name}</CardTitle>
                        <CardImg className="card-img" src={cat.list[7].image}/>
@@ -100,7 +100,7 @@ const Skills = () => {
                     </Card> 
                   </div>
                   <div className="skills-card" key={cat.id}>
-                     <Card className="card"> 
+                     <Card className="card1"> 
                        <CardHeader className="card-title">{cat.type}</CardHeader>
                        <CardTitle>{cat.list[8].name}</CardTitle>
                        <CardImg className="card-img" src={cat.list[8].image}/>

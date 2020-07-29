@@ -141,20 +141,34 @@ a:hover {
 button{
   border-radius: 1px solid #fc5e6c;
 }
-.skills-container{
+.skills-container {
   display: flex;
   width: 100%;
   flex-flow: row wrap;
-  /* justify-content: space-around; */
+  /* margin: auto; */
+  }
+ .projects-container{
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  /* margin: auto; */
+  }
+.skills-categories{
+  margin: auto;
 }
 .card-title{
   color: #fc5e6c
 }
-.skills-card{
+.skills-card {
   width: 25%;
   margin: 2%;
 }
-.card{
+
+.projects-card{
+  width: 25%;
+  margin: auto;
+}
+.card1{
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -166,10 +180,23 @@ button{
   color: #fc5e6c;
   background-image: linear-gradient(orange, #1dcadb);
 }
+.card2{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 30rem; 
+  margin: 2%
 
+}
+
+
+.project-card-img{
+  width: 100%;
+}
 .contact-logos{
   padding: 1%;
-  /* display: block; */
   width: 28%;
   height: auto;
   margin-left: auto;
@@ -183,10 +210,10 @@ button{
   margin:auto;
 }
 
-/* .design-skills{
-  width: 25%;
-  height:auto;
-} */
-.modalHeader{
-  width: 10%;
+.alert{
+  background-color:  #fc5e6c;
+  color: white;
+  border: 4px solid #1dcadb;
+  width: 80%;
+  margin: 2% auto;
 }
