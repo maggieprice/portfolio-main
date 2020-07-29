@@ -208,6 +208,21 @@ button{
   display: flex;
   width: 100%;
 }
+.footer-icons{
+  display:flex;
+  /* margin: auto; */
+}
+.project-use-icons{
+  padding: 1%;
+ margin: auto;
+  height: auto;
+  width: 20%;
+
+  text-align: center;
+}
+.card-footer{
+  width: 100%;
+}
 .logos{
   padding: 1%;
   width: 40%;
