@@ -1,40 +1,49 @@
 import React from "react";
-// import rsuite/dist/styles/rsuite-default.css;
-// import { Button } from 'rsuite';
+import ProjectsAPI from './ProjectsAPI';
+import {
+  Card,
+  CardTitle,
+  CardImg,
+  CardBody,
+  CardHeader,
+  CardFooter
+} from "shards-react";
 
 const Projects = () => {
   return (
-    <div>
-      <h1>Projects Portfoio</h1>
-      <div className="Web Projects">
-        <h2>Web Projects</h2>
-        <div className="ui-projects">
-          <h3>HTML/CSS</h3>
-          {/* 1st build week project */}
-        </div>
-        <div className="javascript-projects">
-          <h3>Javascript</h3>
-        </div>
-        <div className="react-projects">
-          <h3>React</h3>
-        </div>
-        {/* <div classname="redux-projects">
-          <h3>Redux</h3>
-        </div> */}
-      </div>
-      <div className="Design Projects">
-        <h2> Design Projects</h2>
-      </div>
-      <div className="python-skills">
-        <h3>Honorable Mention Python Github Repos:</h3>
-        <ul>
-          <li>
-            <a>
-              https://github.com/maggieprice/Sprint-Challenge--Intro-Python/tree/maggieprice
-            </a>
-            {/* This is a placeholder link, change this later */}
-          </li>
-        </ul>
+    <div className="page">
+      <h1>Projects Portfolio</h1>
+      <div className="projects-div">
+        {ProjectsAPI.map(project =>{
+          return (
+            <div className="projects-container">
+              <div className="projects-card" key={project.id} >
+            <Card className="card2">
+              <CardTitle>{project.Name}</CardTitle>
+              <CardImg className="project-card-img" src={project.Thumbnail}/>
+              <div className="project-icons">
+              <a href={project.Link}>
+                <img className="logos" src="
+                https://cdn0.iconfinder.com/data/icons/simpline-mix/64/simpline_47-256.png" alt="WWW Logo that Links to project"/>
+              </a>
+              {/* <p> | </p> */}
+              <a href={project.Repo}>
+                <img className="logos" src="https://cdn1.iconfinder.com/data/icons/free-social-media-14/32/github_social_media_connect-256.png" alt="Github Logo that Links to my repo"/>
+              </a>
+              </div>
+              <CardFooter className="card-footer">
+                <div className="footer-icons">
+              <CardImg className="project-use-icons" src={project.Symbols[0]}/>
+                <CardImg className="project-use-icons" src={project.Symbols[1]}/>
+                <CardImg  className="project-use-icons" src={project.Symbols[2]}/>
+                <CardImg  className="project-use-icons" src={project.Symbols[3]}/>
+              </div></CardFooter>
+            </Card>
+            </div>
+            </div>
+          )
+        })}
+   
       </div>
     </div>
   );
