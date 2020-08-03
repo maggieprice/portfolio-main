@@ -7,7 +7,23 @@ let ProjestAPI = [
     Symbols: "xyz",
     Thumbnail: "picture",
   }),
+  (JavascriptProject = {
+    Name: "Something",
+    Link: "something",
+    Youtube: "",
+    Repo: "something",
+    Symbols: "xyz",
+    Thumbnail: "picture",
+  }),
   (ReactProject = {
+    Name: "Something",
+    Link: "something",
+    Youtube: "",
+    Repo: "something",
+    Symbols: "xyz",
+    Thumbnail: "picture",
+  }),
+  (NodeJSProject = {
     Name: "Something",
     Link: "something",
     Youtube: "",
