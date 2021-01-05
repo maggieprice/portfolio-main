@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import axios from "axios";
-// import 
-// import ajax from "ajax";
 
 class ContactForm extends Component {
   handleSubmit(e) {
@@ -19,32 +17,16 @@ class ContactForm extends Component {
         subject: subject,
         messsage: message,
       },
-    })
-      .then((response) => {
-        if (response.data.msg === "success") {
-          alert("Message Sent.");
-          this.resetForm();
-        } else if (response.data.msg === "fail") {
-          alert("Message failed to send.");
-        }
-      })
-  //   <script src="jquery.js">
-  //   $.ajax({
-  //     url: 'https://git.heroku.com/portfoliomail.git',
-  //     type: 'POST',
-  //     headers: {'Accept': 'application/json;'},
-  //     data: {
-  //     "name": "name",
-  //     "subject": "subject",
-  //     "email": "message",
-  //     "message": "some body text"
-  //     },
-  //     }).done(function (res) {
-  //       console.log(res); // it shows your email sent message.
-  //     }); 
-  //     // .catch((err) => console.log(err));
-  //     </script>
-  } 
+    }).then((response) => {
+      if (response.data.msg === "success") {
+        alert("Message Sent.");
+        this.resetForm();
+      } else if (response.data.msg === "fail") {
+        alert("Message failed to send.");
+      }
+    });
+    
+  }
 
   resetForm() {
     document.getElementById("contact-form").reset();
@@ -53,16 +35,23 @@ class ContactForm extends Component {
   render() {
     return (
       <div className="page">
-        
         <div className="contact-head">
           <h1>We Should Hang Out...</h1>
         </div>
         <div className="contact-logos">
           <a href="https://github.com/maggieprice">
-            <img className="contact-logos" src="https://cdn1.iconfinder.com/data/icons/free-social-media-14/32/github_social_media_connect-256.png" alt="Github Logo that Links to My Profile"/>
+            <img
+              className="contact-logos"
+              src="https://cdn1.iconfinder.com/data/icons/free-social-media-14/32/github_social_media_connect-256.png"
+              alt="Github Logo that Links to My Profile"
+            />
           </a>
           <a href="https://www.linkedin.com/in/maggieprice1/">
-            <img className="contact-logos" src="https://cdn1.iconfinder.com/data/icons/social-media-free-26/32/linkedin_social_media_connect-256.png" alt="LinkedIn Logo that Links to My Profile"/>
+            <img
+              className="contact-logos"
+              src="https://cdn1.iconfinder.com/data/icons/social-media-free-26/32/linkedin_social_media_connect-256.png"
+              alt="LinkedIn Logo that Links to My Profile"
+            />
           </a>
         </div>
 

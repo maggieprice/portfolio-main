@@ -15,56 +15,31 @@ h3 {
   font-size: 4rem;
 }
 
-.header-img{
+.header-img {
   margin: 5%;
-  background-image: url('https://images.unsplash.com/photo-1503891450247-ee5f8ec46dc3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80');
+  background-image: url("https://images.unsplash.com/photo-1503891450247-ee5f8ec46dc3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
   background-attachment: fixed;
 }
 .name {
-  color:  #fc5e6c;
+  color: #fc5e6c;
 }
 
 .content-left {
-  color:  #fc5e6c;
+  color: #fc5e6c;
   text-align: left;
-  width: 40%
+  width: 40%;
 }
 .content-right {
-  color:  #fc5e6c;
+  color: #fc5e6c;
   text-align: right;
   width: -40%;
 }
 
-/* .tech-skills {
-  background-color: darkgray;
-  color: white;
-  border: 1px solid black;
-  z-index: 1;
-  position: relative;
-  margin-top: -80%;
-  margin-left: 50%;
-  padding: 2%;
-
-  width: 50rem;
-  height: 35rem;
-} */
-/* .python-skills {
-  background-color: darkgray;
-  color: white;
-  border: 1px solid black;
-  z-index: 1;
-  position: relative;
-  margin-top: -10%;
-  margin-left: 50%;
-  margin-right: 5%;
-  padding: 2%;
-} */
-
 /* navigation tabs */
-.navigation1{
+.navigation1 {
   width: 25%;
   color: #fc5e6c;
   /* padding-left: 1%;
@@ -83,7 +58,6 @@ h3 {
   width: 100%;
 }
 
-
 .navigation:before {
   content: "";
   position: absolute;
@@ -99,46 +73,47 @@ h3 {
   transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
- 
 }
-.navigation:hover:before, .navigation:focus:before, .navigation:active:before {
+.navigation:hover:before,
+.navigation:focus:before,
+.navigation:active:before {
   left: 0;
   right: 0;
 }
 
-.page{
+.page {
   background-color: black;
   color: #1dcadb;
   padding: 1%;
-  font-family: 'Permanent Marker', cursive;
-/* font-family: 'Sedgwick Ave Display', cursive; */
+  font-family: "Permanent Marker", cursive;
+  /* font-family: 'Sedgwick Ave Display', cursive; */
 }
-.coral{
-  color: #fc5e6c
+.coral {
+  color: #fc5e6c;
 }
 
 a:hover {
   color: #fc5e6c;
 }
 
-.btn-primary{
+.btn-primary {
   background-color: white;
   color: #fc5e6c;
-  background-color: #fc5e6c ;
+  background-color: #fc5e6c;
 }
 
-.btn{
- background-color: white;
- color: #fc5e6c;
+.btn {
+  background-color: white;
+  color: #fc5e6c;
 }
 
-.btn-primary:hover{
-  background-color: #fc5e6c ;
+.btn-primary:hover {
+  background-color: #fc5e6c;
 }
-.btn:hover{
- background-color: #fc5e6c;
+.btn:hover {
+  background-color: #fc5e6c;
 }
-button{
+button {
   border-radius: 1px solid #fc5e6c;
 }
 .skills-container {
@@ -146,57 +121,61 @@ button{
   width: 100%;
   flex-flow: row wrap;
   margin: auto;
-  }
- .projects-container{
+}
+.projects-div {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+/* .projects-container {
   display: flex;
   width: 100%;
   flex-flow: row wrap;
-
-  }
-.skills-categories{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+} */
+.skills-categories {
   margin: auto;
 }
-.card-title{
-  color: #fc5e6c
+.card-title {
+  color: #fc5e6c;
 }
 .skills-card {
   width: 25%;
   margin: 2%;
 }
 
-.projects-card{
-  width: 25%;
-  margin: auto;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  position: relative;
+.projects-card {
+  width: 100%;
+  /* margin: auto; */
+  /* display: flex;
+  flex-flow: column nowrap; */
+  /* align-items: center; */
+  /* position: relative; */
 }
-.card1{
+.card1 {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   position: relative;
   width: 100%;
-  height: 20rem;
-  margin:3%;
+  height: 30rem;
+  margin: 3%;
   border: 5px solid #fc5e6c;
   color: #fc5e6c;
   background-image: linear-gradient(orange, #1dcadb);
 }
-.card2{
-  
-  width: 100%;
-  height: 30rem; 
-  margin: 2%
-
+.card2 {
+  width: 80%;
+  height: 40rem;
+  margin: 2%;
 }
 
-
-.project-card-img{
+.project-card-img {
   width: 100%;
 }
-.contact-logos{
+.contact-logos {
   padding: 1%;
   width: 28%;
   height: auto;
@@ -204,26 +183,26 @@ button{
   margin-right: auto;
   text-align: center;
 }
-.project-icons{
+.project-icons {
   display: flex;
   width: 100%;
 }
-.footer-icons{
-  display:flex;
+.footer-icons {
+  display: flex;
   /* margin: auto; */
 }
-.project-use-icons{
+.project-use-icons {
   padding: 1%;
- margin: auto;
+  margin: auto;
   height: auto;
   width: 20%;
 
   text-align: center;
 }
-.card-footer{
+.card-footer {
   width: 100%;
 }
-.logos{
+.logos {
   padding: 1%;
   width: 40%;
   height: auto;
@@ -232,14 +211,14 @@ button{
   text-align: center;
 }
 
-.card-img{
+.card-img {
   width: 30%;
   height: auto;
-  margin:auto;
+  margin: auto;
 }
 
-.alert{
-  background-color:  #fc5e6c;
+.alert {
+  background-color: #fc5e6c;
   color: white;
   border: 4px solid #1dcadb;
   width: 80%;
