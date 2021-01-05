@@ -17,8 +17,8 @@ body {
 }
 
 .txt {
-  color: #ffffff;
-  background: #000000;
+  color: #000000;
+  /* background: #000000; */
   font-size: 8rem;
   font-weight: bold;
   font-family: Arial;
