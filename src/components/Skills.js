@@ -60,7 +60,9 @@ const Skills = () => {
                 <div className="skills-card" key={cat.id}>
                   <Card className="card1">
                     <CardHeader className="card-title">{cat.type}</CardHeader>
-                    <CardTitle>{cat.list[1].name}</CardTitle>
+                    <CardTitle>
+                      <h4>{cat.list[1].name}</h4>
+                    </CardTitle>
                     <CardImg className="card-img" src={cat.list[1].image} />
                     <CardBody className="card-body">
                       {cat.list[1].level}
