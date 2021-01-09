@@ -1,3 +1,5 @@
+import React from "react";
+
 let ProjestAPI = [
   {
     id: 1,
@@ -9,7 +11,7 @@ let ProjestAPI = [
       "https://cdn1.iconfinder.com/data/icons/social-media-logos-7/64/html-5-512.png",
       "https://cdn1.iconfinder.com/data/icons/social-media-logos-7/64/css-3-512.png",
     ],
-    Thumbnail: "data/second chance.png",
+    img: "https://i.imgur.com/8YU5ioz.jpg",
   },
   {
     id: 2,
@@ -24,7 +26,8 @@ let ProjestAPI = [
       "https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-javascript-software-develop-command-language-512.png",
       "https://cdn2.iconfinder.com/data/icons/designer-skills/128/react-512.png",
     ],
-    Thumbnail: "https://photos.app.goo.gl/gDtz47Db1NX42SAL6",
+    img:
+      "https://lh3.googleusercontent.com/pw/ACtC-3d_PP0d25fPjxeNiw_uJGOaYgDEJT8sOmarKv0Ikj52YB8siQfJrY8tSqqVmM7sNNBBsC01uU80NTCWYDrfrwkR-J-6LB4oDBwkd6GJ9-koEGlzRoXNTarUE73KIAtiCbzTEuAjb8VXj1_jAqRWdUc=w1701-h793-no?authuser=0",
   },
   {
     id: 3,
@@ -37,7 +40,7 @@ let ProjestAPI = [
       "https://cdn2.iconfinder.com/data/icons/amazon-aws-stencils/100/SDKs_copy_nodeJS-256.png",
       "http://knexjs.org/assets/images/knex.png",
     ],
-    Thumbnail:
+    img:
       "https://cdn1.iconfinder.com/data/icons/hawcons/32/699966-icon-1-cloud-256.png",
   },
 ];
