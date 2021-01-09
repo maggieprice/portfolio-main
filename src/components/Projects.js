@@ -19,7 +19,9 @@ const Projects = () => {
             <div className="projects-container">
               <div className="projects-card" key={project.id}>
                 <Card className="card2">
-                  <CardTitle>{project.Name}</CardTitle>
+                  <CardTitle>
+                    <h3>{project.Name}</h3>
+                  </CardTitle>
                   <CardImg className="project-card-img" src={project.img} />
                   <div className="project-icons">
                     <a href={project.Link}>
