@@ -31,7 +31,7 @@ let ProjestAPI = [
   },
   {
     id: 3,
-    Name: "School in the Cloud",
+    Name: "Cloud School",
     Link: "https://git.heroku.com/cloudschoolbw.git",
     // Youtube: "",
     Repo: "https://github.com/build-week-school-cloud/back-end",

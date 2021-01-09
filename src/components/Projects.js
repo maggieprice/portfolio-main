@@ -22,7 +22,11 @@ const Projects = () => {
                   <CardTitle>
                     <h3>{project.Name}</h3>
                   </CardTitle>
-                  <CardImg className="project-card-img" src={project.img} />
+                  <CardImg
+                    className="project-card-img"
+                    style={{ height: "15rem", width: "auto" }}
+                    src={project.img}
+                  />
                   <div className="project-icons">
                     <a href={project.Link}>
                       <img
