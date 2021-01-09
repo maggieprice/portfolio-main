@@ -27,7 +27,7 @@ let InterestList = [
       "https://images.unsplash.com/photo-1549401002-bcd2dba1a5c2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDl8fHBpYW5vfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60",
   },
   {
-    title: "Listening to Learn (Podcasts/Youtube)",
+    title: "Audible Learning",
     img:
       "https://images.unsplash.com/photo-1590320779846-49d127b212c3?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjF8fHBvZGNhc3R8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60",
   },

@@ -19,9 +19,9 @@ body {
 .txt {
   color: #000000;
   /* background: #000000; */
-  font-size: 6.5rem;
+  font-size: 14rem;
   font-weight: bold;
-  font-family: Arial;
+  font-family: alegreya sans sc;
   text-transform: uppercase;
   margin: auto;
   padding: 0;

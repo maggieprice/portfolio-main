@@ -3,9 +3,6 @@
   padding: 1%;
   background-color: black;
 }
-.about {
-  margin: 5%;
-}
 
 h1 {
   font-size: 9rem;
@@ -15,52 +12,6 @@ h3 {
   font-size: 3.7rem;
 }
 
-.header-img {
-  margin: 5%;
-  background-image: url("https://images.unsplash.com/photo-1503891450247-ee5f8ec46dc3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-  background-attachment: fixed;
-}
-.name {
-  color: #fc5e6c;
-}
-
-.content-left {
-  color: black;
-  text-align: left;
-  margin: 5%;
-  width: 40%;
-  font-size: 2rem;
-  font-weight: bold;
-  font-family: Arial;
-}
-.left-content {
-  display: flex;
-  justify-content: space-between;
-}
-.content-right {
-  color: black;
-  text-align: right;
-  width: 80%;
-  margin: auto;
-  font-size: 1.2rem;
-  font-weight: bold;
-  font-family: Arial;
-}
-.mission {
-  margin-top: 3%;
-}
-.content-bottom {
-  color: black;
-  /* text-align: center; */
-  margin: auto;
-  width: 40%;
-  font-size: 1.5rem;
-  font-weight: bold;
-  font-family: Arial;
-}
 /* navigation tabs */
 .navigation1 {
   width: 25%;
@@ -70,7 +21,7 @@ h3 {
 }
 .navigation {
   background-color: black;
-  color: #1dcadb;
+  color: #c9fbff;
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -81,7 +32,7 @@ h3 {
   width: 100%;
   font-size: 1.2rem;
   font-weight: bold;
-  font-family: Arial;
+  font-family: alegreya sans sc;
 }
 
 .navigation:before {
@@ -116,29 +67,38 @@ h3 {
   /* font-family: 'Sedgwick Ave Display', cursive; */
 }
 
-/* .content {
-  margin: 5%;
-  background-image: url("https://www.colorhexa.com/c9fbff.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-  background-attachment: fixed;
-} */
-
-.top {
-  display: flex;
-}
-
 .top-text {
-  margin: 5%;
+  margin: 2%;
 }
 
 .coral {
   color: #c2fcf7;
+  /* margin: 1%; */
+  font-size: 5rem;
 }
 
 a:hover {
   color: #c2fcf7;
+}
+
+.about {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+}
+
+.two-paragraphs {
+  display: flex;
+  flex-direction: column;
+}
+.content-left {
+  color: black;
+  text-align: left;
+  font-size: 2.9rem;
+  font-family: alegreya sans sc;
+  padding: 5%;
 }
 
 .btn-primary {
