@@ -28,24 +28,22 @@ body {
   z-index: 0;
   /* background: #000000; */
 }
-/* .txt::before {
-  content: "<   Maggie J. Price       />";
-  position: absolute;
-  mix-blend-mode: difference;
-  filter: blur(3px);
-} */
-/* .neon-wrapper { */
-/* position: absolute; */
-/* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  overflow: hidden;
-  display: inline-flex;
-  filter: brightness(200%);
-} */
-/* .gradient {
-  background: linear-gradient(
-    114.5793141156962deg,
-    rgba(#1dcadb) 4.927083333333334%,
-    rgba(#fc5e6c) 97.84374999999999%
-  ); */
+@media (max-width: 500px) {
+  .wrapper {
+    width: 100%;
+    /* background: gray; */
+  }
+  .txt {
+    width: 100%;
+    font-size: 5rem;
+  }
+}
+
+/* .container header nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container header nav a {
+    margin-bottom: 20px;
+  } */

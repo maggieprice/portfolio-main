@@ -237,3 +237,21 @@ button {
   width: 80%;
   margin: 2% auto;
 }
+
+@media (max-width: 500px) {
+  .page {
+    width: 490px;
+  }
+  .navigation {
+    width: 100%;
+  }
+  /* 
+  .container header nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container header nav a {
+    margin-bottom: 20px;
+  } */
+}
