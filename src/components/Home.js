@@ -13,12 +13,7 @@ function Home() {
         <h3 className="coral">Full Stack Web Developer</h3>
       </div>
       <div className="about">
-        <img
-          className="profile"
-          style={{ height: "60rem", width: "100%" }}
-          src="https://scontent.fdet1-2.fna.fbcdn.net/v/t1.0-9/28685327_1753244148073507_2308839256679262742_n.jpg?_nc_cat=105&ccb=2&_nc_sid=09cbfe&_nc_ohc=QbvIkCr5ZHIAX83BBQY&_nc_ht=scontent.fdet1-2.fna&oh=1a9aac3c4f3ed95f903e1c918a31d51e&oe=601C47C3"
-          alt="Maggie Price"
-        />
+       
         <div className="two-paragraphs">
           <div className="about-paragraph">
             <h3>Who am I?</h3>
